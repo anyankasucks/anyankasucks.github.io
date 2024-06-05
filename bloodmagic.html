@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DnD Campaign</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="toolbar">
+        <button onclick="showSection('characters')">Characters</button>
+        <button onclick="showSection('locations')">Locations</button>
+        <button onclick="showSection('clues')">Clues</button>
+        <button onclick="showSection('inventory')">Inventory</button>
+    </div>
+    <div id="main-content">
+        <div id="characters" class="gallery">
+            <!-- Character Images -->
+        </div>
+        <div id="locations" class="gallery" style="display:none;">
+            <!-- Location Images -->
+        </div>
+        <div id="clues" class="gallery" style="display:none;">
+            <!-- Clue Images -->
+        </div>
+        <div id="inventory" class="gallery" style="display:none;">
+            <!-- Inventory Images -->
+        </div>
+    </div>
+    <div id="lightbox" class="lightbox" style="display:none;">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-image" id="lightbox-image">
+        <div class="caption" id="lightbox-caption"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
